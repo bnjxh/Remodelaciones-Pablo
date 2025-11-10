@@ -175,6 +175,7 @@ img {
     border-radius: 15px;
 }
 
+/*ABRIR Y CERRAR IMAGENES */
 .galeria .popup-image {
    position: fixed;
    top: 0; left: 0;
@@ -212,6 +213,24 @@ img {
   
 }
 
+.box {
+    background-color: #a18262;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px black;
+}
+.box_1 {
+    background-color: #2b2323;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px black;
+}
 
 
 
