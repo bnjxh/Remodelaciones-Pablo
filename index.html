@@ -33,7 +33,7 @@
 
     <h2>Presentacion</h2>
 
-     <p>Hola, soy <strong>Pablo Durán.</strong> Hace más de 7 años que trabajo de forma independiente en el área de la construcción y remodelación. Me dedico a brindar servicios de alta calidad, cuidando cada detalle para lograr resultados duraderos, seguros y estéticamente agradables. Mi objetivo es que cada cliente quede completamente satisfecho con el trabajo realizado.</p>
+    <p>Hola, soy <strong>Pablo Durán.</strong> Hace más de 7 años que trabajo de forma independiente en el área de la construcción y remodelación. Me dedico a brindar servicios de alta calidad, cuidando cada detalle para lograr resultados duraderos, seguros y estéticamente agradables. Mi objetivo es que cada cliente quede completamente satisfecho con el trabajo realizado.</p>
 
     </section>
 
@@ -88,6 +88,7 @@
 
     </section>
 
+    <!--SCRIPT PARA ABRIR Y CERRAR IMAGENES-->
     <script>
         document.querySelectorAll('.imagen img').forEach(image => {
             image.onclick = () => {
@@ -100,6 +101,20 @@
             document.querySelector('.popup-image').style.display = 'none';
         }
     </script>
+
+    <!--SCRIPT PARA SCROLL SUAVE-->
+    <script>
+    document.querySelectorAll('nav a').forEach(enlace => {
+     enlace.addEventListener('click', function(e) {
+      e.preventDefault();
+      const seccion = document.querySelector(this.getAttribute('href'));
+      seccion.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
     
 </body>
 
@@ -110,4 +125,3 @@
     <a href="https://wa.me/56959655565">Enviame un Whatsapp</a>
 </footer>
 </html>
-
